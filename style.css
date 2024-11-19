@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,62 +9,73 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
+    max-width: 1200px;
+}
+
+/* User List Styles */
+#user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-item {
+    background-color: #fff;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 300px;
 }
 
 button {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
+    padding: 8px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
-#user-list {
-    margin-top: 20px;
+#error-message {
+    color: red;
+    font-weight: bold;
 }
 
+/* Form Styles */
 #user-form {
-    margin-top: 20px;
-    background-color: #f9f9f9;
+    display: none;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#user-form input {
-    margin-bottom: 10px;
-    padding: 8px;
+input[type="text"], input[type="email"] {
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-form button:hover {
-    background-color: #45a049;
-}
+/* Responsiveness */
+@media (max-width: 768px) {
+    #user-list {
+        flex-direction: column;
+        align-items: center;
+    }
 
-form button[type="button"] {
-    background-color: #f44336;
-}
+    .user-item {
+        max-width: 100%;
+    }
 
-form button[type="button"]:hover {
-    background-color: #e53935;
+    #user-form {
+        width: 100%;
+    }
 }
