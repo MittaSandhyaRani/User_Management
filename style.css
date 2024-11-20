@@ -1,3 +1,4 @@
+/* Body styling: Font, background color, and margin/padding reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Container styling: Width, padding, background, border-radius, and shadow for better presentation */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -14,6 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Button styling: Padding, background color, text color, border, and hover effect */
 button {
     padding: 10px;
     margin-top: 20px;
@@ -24,14 +27,17 @@ button {
     cursor: pointer;
 }
 
+/* Button hover effect: Darker green */
 button:hover {
     background-color: #45a049;
 }
 
+/* User list container styling */
 #user-list {
     margin-top: 20px;
 }
 
+/* User form container styling: Background, padding, and border-radius */
 #user-form {
     margin-top: 20px;
     background-color: #f9f9f9;
@@ -39,6 +45,7 @@ button:hover {
     border-radius: 8px;
 }
 
+/* Input fields inside the form: Margin, padding, width, border-radius, and border */
 #user-form input {
     margin-bottom: 10px;
     padding: 8px;
@@ -47,6 +54,7 @@ button:hover {
     border: 1px solid #ccc;
 }
 
+/* Form buttons styling: Similar to general buttons, with a distinct hover effect */
 form button {
     background-color: #4CAF50;
     color: white;
@@ -56,14 +64,17 @@ form button {
     cursor: pointer;
 }
 
+/* Button hover effect */
 form button:hover {
     background-color: #45a049;
 }
 
+/* Cancel button inside form: Red background and hover effect */
 form button[type="button"] {
     background-color: #f44336;
 }
 
+/* Cancel button hover effect */
 form button[type="button"]:hover {
     background-color: #e53935;
 }
