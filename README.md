@@ -8,7 +8,7 @@ A simple web application for managing user details. Users can view, add, edit, a
 - Responsive design.
 - Error handling and form validation.
 
-## Setup
+## Setup 
 1. Clone the repository:
    ```bash
    git clone https://github.com/MittaSandhyaRani/User_Management.git
