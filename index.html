@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport for responsive design -->
+    <title>User Management Dashboard</title> <!-- Page title -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
 </head>
 <body> 
-  
-    <div class="container">
-        <h1>User Management Dashboard</h1>
-        
-        <button id="add-user-btn" onclick="showAddForm()">Add User</button>
 
-        <div id="user-list"></div> 
+    <div class="container"> <!-- Main container for the page content -->
+        <h1>User Management Dashboard</h1> <!-- Page heading -->
 
-        <div id="user-form" style="display: none;">
-            <h2 id="form-title">Add User</h2>
-            <form id="form" onsubmit="handleFormSubmit(event)">
+        <button id="add-user-btn" onclick="showAddForm()">Add User</button> <!-- Button to show the add user form -->
+
+        <div id="user-list"></div> <!-- Container to display the list of users -->
+
+        <!-- Form for adding or editing a user -->
+        <div id="user-form" style="display: none;"> 
+            <h2 id="form-title">Add User</h2> <!-- Form title (dynamic: Add/Edit User) -->
+            <form id="form" onsubmit="handleFormSubmit(event)"> <!-- Form submission handler -->
                 <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" required>
+                <input type="text" id="first-name" required> <!-- Input field for first name -->
+                
                 <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" required>
+                <input type="text" id="last-name" required> <!-- Input field for last name -->
+                
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="department">Department:</label>
-                <input type="text" id="department" required>
-                <button type="submit">Save</button>
-                <button type="button" onclick="hideForm()">Cancel</button>
-            </form> 
-        </div> 
-    </div>
+                <input type="email" id="email" required> <!-- Input field for email -->
 
-    <script src="script.js"></script>
+                <label for="department">Department:</label>
+                <input type="text" id="department" required> <!-- Input field for department -->
+                
+                <button type="submit">Save</button> <!-- Submit button for saving user -->
+                <button type="button" onclick="hideForm()">Cancel</button> <!-- Cancel button to hide form -->
+            </form> 
+        </div> <!-- End of user form -->
+
+    </div> <!-- End of container -->
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
